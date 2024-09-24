@@ -78,6 +78,8 @@ button {
   background-color: #ff6f61;
   color: #fff;
   padding: 12px 20px;
+  /* gap: 10px; */
+  margin-right: 10px;
   border: none;
   border-radius: 10px;
   cursor: pointer;

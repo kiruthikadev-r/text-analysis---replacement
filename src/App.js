@@ -38,6 +38,8 @@ function App() {
         onChange={(e) => setText(e.target.value)}
         placeholder="Type or paste your text here..."
       />
+        <button onClick={() => setText('')}>Clear Text</button>
+
       <div className="statistics">
         <p>Unique Words: {uniqueWordsCount}</p>
         <p>Character Count (excluding spaces and punctuation): {charCount}</p>
@@ -49,6 +51,7 @@ function App() {
           value={searchText}
           onChange={(e) => setSearchText(e.target.value)}
         />
+        
         <input
           type="text"
           placeholder="Replace with..."
@@ -56,7 +59,6 @@ function App() {
           onChange={(e) => setReplaceText(e.target.value)}
         />
         <button onClick={handleReplace}>Replace All</button>
-        <button onClick={() => setText('')}>Clear Text</button>
 <button onClick={() => { setSearchText(''); setReplaceText(''); }}>Clear Inputs</button>
 
       </div>
